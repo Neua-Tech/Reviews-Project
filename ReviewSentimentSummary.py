@@ -35,7 +35,7 @@ def analyze_and_summarize_reviews(input_file, output_file, anthropic_api_key):
 
         # Create a message for Claude to generate a summary of the review
         summary_message = anthropic_client.messages.create(
-            model="claude-3-opus-20240229",
+            model="claude-3-haiku-20240307",
             max_tokens=100,
             temperature=0.0,
             messages=[
